@@ -49,7 +49,12 @@
     .form-inputs {
         margin-bottom: 20px;
     }
-
+    .container, .navbar {
+        border-radius: 6px;
+    }
+    .first-row {
+        padding-top: 15px;
+    }
     </style>
 </head>
 <body>
@@ -58,7 +63,7 @@
  <div class="bg-secondary jumbotron text-center text-light no-bot-margin">
    <h1 class="text-Pacifico">Tristin Tobias</h1>
  </div>
- <nav class="navbar navbar-expand-lg navbar-light bg-light text-Pacifico">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-Pacifico">
         <a class="navbar-brand" href="index.html">About Me</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,10 +75,8 @@
           </div>
       </nav>
 </div>
-
- </div>
  <div class="container bg-light">
-        <div class="row">
+        <div class="row first-row">
             <div class="col-sm-3">
                 <img class="img-thumbnail rounded mx-auto d-block" src="images/LinkedIn-Photo.PNG" alt="Tristin" width="70%">
                 <hr>
@@ -84,13 +87,13 @@
             <div class="col-sm-9 font-weight-light">
                  <h3 class="text-Pacifico">Send Me a Note!</h3>
                  <form>  
-                    <p>Name</p>
+                    <p>Name:</p>
                     <input type="text" class="form-inputs">
                    
-                    <p>Email</p>
+                    <p>Email:</p>
                     <input type="text" class="form-inputs">
                     
-                    <p>Message</p>
+                    <p>Message:</p>
                     <textarea class="message-textarea">
                     </textarea>
                     <button type="submit" class="btn btn-dark submit-button" onClick="alert('Thanks for the feedback! This button does not work yet, though.');">Submit</button>
@@ -101,7 +104,7 @@
     </div>
 </div>
 <footer class="footer">
-    <div class="container text-center bg-secondary text-Pacifico footer-height">
+    <div class="container text-center bg-secondary footer-height text-Pacifico">
         <span class="text-light">Copyright &copy;</span>
     </div>
 </footer>
