@@ -34,6 +34,22 @@
         text-align: center;
         font-size: 18px;
     }
+    .descriptors {
+        text-align: center;
+        line-height: 12px;
+    }
+    .message-textarea {
+        width: 50%;
+        height: 200px;
+    }
+    .submit-button {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-inputs {
+        margin-bottom: 20px;
+    }
+
     </style>
 </head>
 <body>
@@ -61,14 +77,25 @@
             <div class="col-sm-3">
                 <img class="img-thumbnail rounded mx-auto d-block" src="images/LinkedIn-Photo.PNG" alt="Tristin" width="70%">
                 <hr>
-                <ul class="font-weight-light">
-                <li>Amateur Web Developer</li>
-                <li>Berkeley Student & Alum</li>
-                <li>Creative Writer & Blogger</li>
-                </ul>
+                <p class="font-weight-light descriptors">Amateur Web Developer</p>
+                <p class="font-weight-light descriptors">Berkeley Student & Alum</p>
+                <p class="font-weight-light descriptors">Creative Writer & Blogger</p>
             </div>
             <div class="col-sm-9 font-weight-light">
-                 <p>Contact Me</p>
+                 <h3 class="text-Pacifico">Send Me a Note!</h3>
+                 <form>  
+                    <p>Name</p>
+                    <input type="text" class="form-inputs">
+                   
+                    <p>Email</p>
+                    <input type="text" class="form-inputs">
+                    
+                    <p>Message</p>
+                    <textarea class="message-textarea">
+                    </textarea>
+                    <button type="submit" class="btn btn-dark submit-button" onClick="alert('Thanks for the feedback! This button does not work yet, though.');">Submit</button>
+                </form>
+
             </div>
         </div>
     </div>
